@@ -1,0 +1,22 @@
+
+<div class="container-fluid">
+<div *ngFor="let campo of lista" class="row mb-5">
+<div  class=" col">
+<app-labinp  [valor]="campo" ></app-labinp>
+</div>
+</div>
+<div class="row ">
+    <div class="col-4 mx-auto">
+        <div class="form-group">
+            <select class="form-control" id="dniDropdown">
+                <option>DNI</option>
+                <option>Pasaporte</option>
+                <option>Libreta unica</option>
+            </select>
+        </div>
+    </div>
+    <div class="col-4 mx-auto">
+        <input placeholder="Documento" class="form-control" type="text" name="dni" id="dni">
+    </div>
+</div>
+</div>
